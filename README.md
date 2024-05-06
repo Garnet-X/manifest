@@ -12,7 +12,7 @@ To set up your build environment and sync Mist, please follow this guide: [Link]
 **To initialize your local repository using the AOSP/CAF based Mist source, use a command like this:**
 
 ```bash
-   repo init -u https://github.com/Project-Mist-OS/manifest -b 14.o
+   repo init -u https://github.com/Project-Mist-OS/manifest -b 14.0
 ```
 **Sync up with this command:**
 ```bash
