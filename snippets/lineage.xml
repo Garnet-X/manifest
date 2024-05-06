@@ -71,7 +71,7 @@
   <project path="external/json-c" name="android_external_json-c" groups="qcom,qssi" remote="lineage" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="lineage-21.0-caf" remote="lineage" />
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,kailua-vendor" revision="lineage-21.0-caf" remote="lineage" />
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="mist_qpr2" >
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="mist_qpr2" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
