@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+     <!-- GitHub (MistOS) -->
+     <remote  name="mist"
+           fetch="https://github.com/Project-Mist-OS"
+           revision="15.0" />
+    
+
+  <!-- Rootdir -->
+  <project path="manifest" name="manifest" remote="mist" />
+  
+  <project path="art" name="art" groups="pdk" remote="mist" />
+  
+  <project path="bionic" name="bionic" groups="pdk" remote="mist" />
+   
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="mist" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="mist" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+   <!-- FWB -->
+   <project path="frameworks/base" name="frameworks-base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="mist" />
+
+   <!-- Packages -->
+   <project path="packages/apps/crDroidSettings" name="packages_apps_mistify" remote="mist" />
+   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="mist" />
+   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="mist" />
+
+   <!-- vendor -->
+   <project path="vendor/lineage" name="vendor_mist" remote="mist" />
+   
+</manifest>
