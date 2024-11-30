@@ -175,7 +175,7 @@
   <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="rising" />
 
   <!-- Vendor  -->
-  <project path="vendor/addons" name="android_vendor_addons" remote="rising" />
+  <project path="vendor/addons" name="vendor_addons" remote="mist" />
   <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" />
   <project path="vendor/lineage" name="vendor_lineage" remote="mist" />
   <project path="vendor/mist" name="vendor_mist" groups="pdk-fs" remote="mist-lab" />
