@@ -153,6 +153,7 @@
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="mist" />
   <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="rising" />
   <project path="packages/services/VncFlinger" name="android_packages_services_VncFlinger" remote="rising" />
+  <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="mist" />
 
   <!-- AOSP Packages  -->
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio" remote="mist" />
