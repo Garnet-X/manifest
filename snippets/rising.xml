@@ -117,6 +117,7 @@
   </project>
   
   <project path="build/release" name="android_build_release" groups="pdk,tradefed" remote="rising" />
+  <project path="mist-maintainers" name="mist-maintainers" remote="mist" />
 
   <!-- Device  -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="mist" />
